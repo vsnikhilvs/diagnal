@@ -1,31 +1,35 @@
 @import "/src/typography";
 
-.imageGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px;
+.container {
+    background-color: #171717;
+    color: #ffffff;
+    .imageGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
 
-    .imageContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        overflow: hidden;
-
-        .contentName {
-            margin: 0;
-            width: 100%;
-            white-space: nowrap;
+        .imageContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
             overflow: hidden;
-            text-overflow: ellipsis;
+
+            .contentName {
+                margin: 0;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                @extend .titillium-web-light;
+            }
+        }
+        .noResults {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             @extend .titillium-web-light;
         }
-    }
-    .noResults {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        @extend .titillium-web-light;
     }
 }

@@ -15,10 +15,11 @@ const SearchInput = ({ handleOnChange }: SearchInputProps) => {
                 placeholder="Search..."
                 className={styles.inputInput}
                 onChange={(e) => handleOnChange(e)}
+                inputProps={{ maxLength: 10 }}
                 InputProps={{
                     endAdornment: (
                         <InputAdornment position="end">
-                            {<SearchIcon style={{color: 'white'}} />}
+                            {<SearchIcon style={{ color: "white" }} />}
                         </InputAdornment>
                     ),
                 }}

@@ -1,3 +1,7 @@
+/**
+ * Service to get the list of items from the defined API
+ */
+
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const getData = async (page: number) => {

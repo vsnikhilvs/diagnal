@@ -11,6 +11,10 @@
         align-items: center;
         gap: 1rem;
 
+        .backButton {
+            cursor: pointer;
+        }
+
         .header {
             @extend .titillium-web-regular;
         }

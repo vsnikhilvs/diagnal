@@ -7,13 +7,17 @@ type HeaderProps = {
     onSearch: (
         event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
     ) => void;
+    onBackButtonClick: () => void;
 };
 
-const Header = ({ title, onSearch }: HeaderProps) => {
+const Header = ({ title, onSearch, onBackButtonClick }: HeaderProps) => {
     return (
         <div className={styles.container}>
             <div className={styles.headerSection}>
-                <KeyboardBackspaceIcon />
+                <KeyboardBackspaceIcon
+                    className={styles.backButton}
+                    onClick={onBackButtonClick}
+                />
                 <p className={styles.header}>{title}</p>
             </div>
             <SearchInput handleOnChange={(e) => onSearch(e)} />

@@ -1,0 +1,22 @@
+@import "/src/typography";
+
+.container {
+    background-color: #171717;
+    color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+
+    .homeTitle {
+        @extend .titillium-web-regular;
+    }
+
+    .navSection {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        a {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.container {
+    position: "relative";
+    border-radius: "4px";
+    background-color: "#f2f2f2";
+    &:hover {
+        background-color: "#e0e0e0";
+    }
+    margin-left: 0;
+    width: "100%";
+    transition: "width 0.3s";
+
+    div {
+        div {
+            color: white;
+        }
+    }
+}
+.inputInput {
+    padding: "10px";
+    width: "100%";
+    transition: "width 0.3s";
+}

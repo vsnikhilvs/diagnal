@@ -1,7 +1,6 @@
 import { InputAdornment, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import styles from "./SearchInput.module.scss";
-import { ChangeEvent, SyntheticEvent } from "react";
 
 type SearchInputProps = {
     handleOnChange: (
